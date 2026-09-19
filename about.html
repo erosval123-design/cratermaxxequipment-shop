@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23050c12'/%3E%3Ccircle cx='16' cy='16' r='13' fill='%23141414'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23f07820' stroke-width='1.5'/%3E%3Cline x1='26' y1='6' x2='16' y2='16' stroke='%23f07820' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='16' y1='16' x2='11' y2='24' stroke='%23f07820' stroke-width='2.5' stroke-linecap='round'/%3E%3Cpath d='M7 24L15 21L13 28L6 28Z' fill='%23f07820'/%3E%3Ccircle cx='26' cy='6' r='2' fill='%23f07820'/%3E%3Ccircle cx='16' cy='16' r='1.8' fill='%23f07820'/%3E%3C/svg%3E">
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>About Us | CraterMaxx Equipment</title>
 <meta name="description" content="Dig Deeper. Spend Less. — CraterMaxx Equipment">
@@ -359,15 +360,49 @@ footer{background:var(--s1);border-top:1px solid var(--bd);padding:64px 40px 28p
 .ft-copy{color:rgba(255,255,255,.26);font-size:.75rem}
 .ppills{display:flex;gap:5px}
 .ppill{background:var(--s2);border:1px solid var(--bd);padding:3px 9px;border-radius:4px;font-size:.65rem;color:rgba(255,255,255,.35);font-weight:600;font-family:var(--ff-body)}
+
+/* full logo SVG */
+.logo-svg{display:block;height:44px;width:auto}
+.logo-mark,.logo-name{display:none!important}
+@media(max-width:480px){.logo-svg{height:36px}}
+
 </style>
 </head>
 <body>
 <div class="hdr-wrap">
   <div class="hdr">
-    <a href="index.html" class="logo">
-      <div class="logo-mark"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><!-- boom (main arm) --><line x1="4" y1="3.5" x2="13" y2="12" stroke="white" stroke-width="2.5" stroke-linecap="round"/><!-- stick (forearm) --><line x1="13" y1="12" x2="17" y2="17.5" stroke="white" stroke-width="2" stroke-linecap="round"/><!-- bucket body --><path d="M15 17.5L22 19.5L19 23.5H12L10.5 19.5L15 17.5Z" fill="white"/><!-- boom pivot pin --><circle cx="4" cy="3.5" r="2" fill="white"/><!-- joint pin --><circle cx="13" cy="12" r="1.5" fill="rgba(255,255,255,.55)"/></svg></div>
-      <span class="logo-name">CraterMaxx <em>Equipment</em></span>
-    </a>
+    <a href="index.html" class="logo"><svg viewBox="0 0 370 56" height="46" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark circle background (crater badge) -->
+  <circle cx="30" cy="28" r="26" fill="#141414"/>
+  <!-- Orange outer ring -->
+  <circle cx="30" cy="28" r="26" fill="none" stroke="#f07820" stroke-width="2.5"/>
+  <!-- Ground/earth cracking at bottom of circle (dark) -->
+  <path d="M10 46 Q20 52 30 54 Q40 52 50 46" fill="none" stroke="#333" stroke-width="3"/>
+  <path d="M14 50 Q22 56 30 56 Q38 56 46 50" fill="none" stroke="#222" stroke-width="2"/>
+  <!-- Excavator arm: boom (upper joint to elbow) -->
+  <line x1="48" y1="10" x2="30" y2="28" stroke="#f07820" stroke-width="5" stroke-linecap="round"/>
+  <!-- Excavator arm: stick (elbow to wrist) -->
+  <line x1="30" y1="28" x2="22" y2="42" stroke="#f07820" stroke-width="4" stroke-linecap="round"/>
+  <!-- Bucket body -->
+  <path d="M14 42 L28 38 L24 51 L12 51 Z" fill="#f07820"/>
+  <!-- Bucket teeth -->
+  <line x1="12" y1="51" x2="10" y2="55" stroke="#f07820" stroke-width="2" stroke-linecap="round"/>
+  <line x1="17" y1="51" x2="16" y2="55" stroke="#f07820" stroke-width="2" stroke-linecap="round"/>
+  <line x1="22" y1="51" x2="22" y2="55" stroke="#f07820" stroke-width="2" stroke-linecap="round"/>
+  <!-- Joint pins (circles at pivot points) -->
+  <circle cx="48" cy="10" r="3.5" fill="#f07820" stroke="#141414" stroke-width="1.5"/>
+  <circle cx="30" cy="28" r="3" fill="#f07820" stroke="#141414" stroke-width="1.5"/>
+  <circle cx="22" cy="42" r="2.5" fill="#f07820" stroke="#141414" stroke-width="1"/>
+  <!-- Wordmark: CRATER (white) -->
+  <text x="68" y="38" font-family="'Barlow Condensed',Impact,'Arial Black',sans-serif"
+        font-size="38" font-weight="900" fill="#d0d0d0" letter-spacing="-0.5">CRATER</text>
+  <!-- Wordmark: MAXX (orange) -->
+  <text x="236" y="38" font-family="'Barlow Condensed',Impact,'Arial Black',sans-serif"
+        font-size="38" font-weight="900" fill="#f07820" letter-spacing="-0.5">MAXX</text>
+  <!-- Sub -->
+  <text x="68" y="54" font-family="'Barlow Condensed',sans-serif"
+        font-size="11.5" font-weight="600" fill="rgba(255,255,255,.42)" letter-spacing="4.5">EQUIPMENT</text>
+</svg></a>
     <button class="hmbtn" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
